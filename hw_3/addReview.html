@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить отзыв</title>
+    <style>
+        #productName {margin-bottom: 24px;}
+        #btnAdd {margin-top: 24px;}
+    </style>
+    <script src="repo.js"></script>
+</head>
+<body>
+    <div><a href="addReview.html">Страница добавления отзыва</a></div>
+    <div><a href="viewReviews.html">Страница просмотра отзывов</a></div>
+
+    <h1>Добавить отзыв о продукте</h1>
+    <form>
+        <div>
+            <label for="productName">Название продукта:</label>
+            <input type="text" id="productName" name="productName">
+        </div>
+        <div>
+            <label for="reviewText">Текст отзыва:</label>
+            <textarea id="reviewText" name="reviewText"></textarea>
+        </div>
+        <button type="button" onclick="addReview()" id="btnAdd">Добавить отзыв</button>
+    </form>
+    <div id="error"></div>
+</body>
+</html>
